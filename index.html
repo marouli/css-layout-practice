@@ -14,26 +14,26 @@
   <body>
     <div class="sidebar">
       <nav class="sidebar-nav">
-        <div class="logo">
+        <div class="sidebar-logo">
           <h1>Cl<span>o</span>ud <span>io</span></h1>
         </div>
-        <ul>
-          <li>
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
             <a class="active" href="#"><i class="fas fa-home"></i>Home</a>
           </li>
-          <li>
+          <li class="sidebar-nav-item">
             <a href="#"><i class="far fa-folder"></i>My Files</a>
           </li>
-          <li>
+          <li class="sidebar-nav-item">
             <a href="#"><i class="fas fa-history"></i>Recent Files</a>
           </li>
-          <li>
+          <li class="sidebar-nav-item">
             <a href="#"><i class="fas fa-user-friends"></i>Shared Files</a>
           </li>
-          <li>
+          <li class="sidebar-nav-item">
             <a href="#"><i class="fas fa-folder-plus"></i>File request</a>
           </li>
-          <li>
+          <li class="sidebar-nav-item">
             <a href="#"><i class="fas fa-trash-alt"></i>Trash</a>
           </li>
         </ul>
@@ -67,27 +67,39 @@
       <section class="recently-used-section">
         <header class="recently-used-header">
           <h3>Recently Used</h3>
-          <div class="btn-container">
-            <button class="btn btn-block"><i class="fas fa-th-large"></i></button>
-            <button class="btn btn-inline"><i class="fas fa-bars"></i></button>
+          <div>
+            <button class="recently-used-btn"><i class="fas fa-th-large"></i><span class="sr-only">Grid View</span></button>
+            <button class="recently-used-btn"><i class="fas fa-bars"></i><span class="sr-only">List View</span></button>
           </div>
         </header>
-        <div class="article-container">
-          <article>
-            <div><i class="fas fa-ellipsis-v"></i></div>
+        <div class="recently-used-article-container">
+          <article class="recently-used-article">
             <div><i class="fas fa-clone"></i></div>
+            <ul class="recently-used-article-users">
+              <li><img src="img/face01.jpg" /></li>
+              <li><img src="img/face02.jpg" /></li>
+            </ul>
+            <div><i class="fas fa-ellipsis-v"></i></div>
             <h4>App Project</h4>
             <p>Created: 20.02.2020</p>
           </article>
-          <article>
-            <div><i class="fas fa-ellipsis-v"></i></div>
+          <article class="recently-used-article">
             <div><i class="fas fa-clone"></i></div>
+            <ul class="recently-used-article-users">
+              <li><img src="img/face03.jpg" /></li>
+              <li><img src="img/face04.jpg" /></li>
+            </ul>
+            <div><i class="fas fa-ellipsis-v"></i></div>
             <h4>App Project</h4>
             <p>Created: 20.02.2020</p>
           </article>
-          <article>
-            <div><i class="fas fa-ellipsis-v"></i></div>
+          <article class="recently-used-article">
             <div><i class="fas fa-clone"></i></div>
+            <ul class="recently-used-article-users">
+              <li><img src="img/face05.jpg" /></li>
+              <li><img src="img/face03.jpg" /></li>
+            </ul>
+            <div><i class="fas fa-ellipsis-v"></i></div>
             <h4>App Project</h4>
             <p>Created: 20.02.2020</p>
           </article>
@@ -103,7 +115,7 @@
           <p>Owners</p>
           <p>Last Modified</p>
         </div>
-        <div class="file-list">
+        <div class="recent-files-list">
           <ul>
             <li class="file-list-item">
               <div class="list-square-icon"></div>
