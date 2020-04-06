@@ -105,67 +105,139 @@
           </article>
         </div>
       </section>
+      <header class="recent-files-header">
+        <h3>Recent Files</h3>
+        <p>View All</p>
+      </header>
       <section class="recent-files-section">
-        <header class="recent-files-header">
-          <h3>Recent Files</h3>
-          <p>View All</p>
-        </header>
-        <div class="recent-files-subheader">
-          <p>Name<i class="fas fa-long-arrow-alt-down"></i></p>
-          <p>Owners</p>
-          <p>Last Modified</p>
+        <p class="recent-files-heading">Name<i class="fas fa-long-arrow-alt-down"></i></p>
+        <p class="recent-files-heading">Owners</p>
+        <p class="recent-files-heading">Last Modified</p>
+        <p></p>
+
+        <!-- first row -->
+        <div class="recent-files-cell">
+          <div class="cell-square-icon"></div>
+          Travel Landing Page
         </div>
-        <div class="recent-files-list">
-          <ul>
-            <li class="file-list-item">
-              <div class="list-square-icon"></div>
-              <h4>Travel Landing Page</h4>
-              <p>5 members</p>
-              <p>Mar 8, 2020</p>
-              <i class="fas fa-ellipsis-h"></i>
-            </li>
-            <li class="file-list-item">
-              <div class="list-square-icon"></div>
-              <h4>Tour Photos</h4>
-              <p>12 members</p>
-              <p>Mar 8, 2020</p>
-              <i class="fas fa-ellipsis-h"></i>
-            </li>
-            <li class="file-list-item">
-              <div class="list-square-icon"></div>
-              <h4>Dashboard Structure</h4>
-              <p>10 members</p>
-              <p>Mar 9, 2020</p>
-              <i class="fas fa-ellipsis-h"></i>
-            </li>
-            <li class="file-list-item">
-              <div class="list-square-icon"></div>
-              <h4>Character Illustration</h4>
-              <p>3 members</p>
-              <p>Mar 10, 2020</p>
-              <i class="fas fa-ellipsis-h"></i>
-            </li>
-          </ul>
+        <div class="recent-files-cell">5 members</div>
+        <div class="recent-files-cell">Mar 8, 2020</div>
+        <div class="recent-files-cell">
+          <button class="file-actions"> 
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="sr-only">Recent files actions</span>
+          </button>
         </div>
+
+        <!-- second row -->
+        <div class="recent-files-cell">
+          <div class="cell-square-icon"></div>
+          Toor Photos
+        </div>
+        <div class="recent-files-cell">12 members</div>
+        <div class="recent-files-cell">Mar 8, 2020</div>
+        <div class="recent-files-cell">
+          <button class="file-actions"> 
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="sr-only">Recent files actions</span>
+          </button>
+        </div>
+
+        <!-- third row -->
+        <div class="recent-files-cell">
+          <div class="cell-square-icon"></div>
+          Dashboard Structure
+        </div>
+        <div class="recent-files-cell">10 members</div>
+        <div class="recent-files-cell">Mar 9, 2020</div>
+        <div class="recent-files-cell">
+          <button class="file-actions"> 
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="sr-only">Recent files actions</span>
+          </button>
+        </div>
+
+        <!-- fourth row -->
+        <div class="recent-files-cell">
+          <div class="cell-square-icon"></div>
+          Dashboard Structure
+        </div>
+        <div class="recent-files-cell">3 members</div>
+        <div class="recent-files-cell">Mar 10, 2020</div>
+        <div class="recent-files-cell">
+          <button class="file-actions"> 
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="sr-only">Recent files actions</span>
+          </button>
+        </div>
+
+
       </section>
     </main>
 
-    <aside>
-      <header>
-        <h2>Storage</h2>
+    <aside class="statistics">
+      <header class="user-profile">
+        <div class="user-profile-actions">
+          <i class="far fa-bell"></i>
+          <span class="sr-only">Profile notifications</span>
+          <i class="fas fa-cog"></i>
+          <span class="sr-only">Profile settings</span>
+        </div>
+        <span class="user-profile-name">Victoria
+          <i class="fas fa-angle-down"></i>
+          <img class="user-profile-avatar" src="img/face03.jpg" />
+        </span>
       </header>
-      <div>
-        <p>85%</p>
-        <p>Used</p>
+      <div class="storage">
+        <h2>Storage</h2>
+        <div class="usage-graph">
+          <svg class="arc" viewBox="0 0 190 190">
+            <circle
+              class="arc--docs"
+              cx="95"
+              cy="95"
+              r="91"
+              fill="transparent"
+            />
+            <circle
+              class="arc--videos"
+              cx="95"
+              cy="95"
+              r="91"
+              fill="transparent"
+            />
+            <circle
+              class="arc--images"
+              cx="95"
+              cy="95"
+              r="91"
+              fill="transparent"
+            />
+            <circle
+              class="arc--others"
+              cx="95"
+              cy="95"
+              r="91"
+              fill="transparent"
+            />
+          </svg>
+          <div class="usage-inner">
+            <div class="usage-percent">
+              85<span class="usage-pct-symbol">%</span>
+            </div>
+            Used
+          </div>
+        </div>
+        <div class="usage-bytes">420.2GB of 500 GB used</div>
       </div>
-      <ul>
-        <li>Documents</li>
-        <li>Videos</li>
-        <li>Images</li>
-        <li>Others</li>
-      </ul>
-      <section>
 
+      <section class="upgrade">
+        <img src="img/rocket-box.png" alt="">
+        <h4>Buy more space now!</h4>
+        <p>Upgrade to cloud premium</p>
+        <button class="upgrade-btn">
+          Upgrade Account!
+        </button>
       </section>
     </aside>
   </body>
